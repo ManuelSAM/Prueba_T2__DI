@@ -5,6 +5,8 @@ import android.graphics.Typeface;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 public class splash_screen extends AppCompatActivity {
@@ -28,7 +30,7 @@ public class splash_screen extends AppCompatActivity {
                 /* Create an Intent that will start the Menu-Activity. */
                 Intent mainIntent = new Intent(splash_screen.this, Login.class);
                 splash_screen.this.startActivity(mainIntent);
-                //overridePendingTransition(R.anim.out_left, R.anim.in_right);
+                overridePendingTransition(R.anim.out_left, R.anim.in_right);
                 splash_screen.this.finish();
             }
         }, SPLASH_DISPLAY_LENGTH);
