@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="es.manuyo.yep.Login"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:id="@+id/Title"
+        style="@style/loginTitle"
+        android:text="@string/Title" />
+
+    <TextView
+        android:id="@+id/Subtitle"
+        style="@style/loginSubtitle"
+        android:text="@string/Subtitle" />
+
+   <!-- <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:background="#ffffff"-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/userField"
+            android:hint="@string/userText"
+            style="@style/loginUser" />
+
+        <EditText
+            android:id="@+id/passField"
+            android:hint="@string/passwordText"
+            style="@style/loginPassword" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:text="@string/LoginBtn"
+        style="@style/loginButton" />
+
+    <TextView
+        android:text="@string/signUp"
+        style="@style/loginSignUp" />
+
+</RelativeLayout>
