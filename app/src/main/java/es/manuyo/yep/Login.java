@@ -28,6 +28,7 @@ public class Login extends AppCompatActivity {
         logIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                logIn.setBackgroundColor(665200);
                 Intent intent = new Intent(Login.this, MainActivity.class);
                 startActivity(intent);
             }
